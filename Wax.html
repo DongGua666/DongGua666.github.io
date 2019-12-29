@@ -8,64 +8,7 @@
 <html>
 <head>
 <meta charset="utf-8"> 
-function showNotification(){
-	//判断浏览器是否支持Notification对象
-	debugger;
-	var isFocus = true;
-	//Chrome/FireFox
-	window.onfocus = function() {
-	    isFocus = true;
-	};
-	window.onblur = function() {
-	    isFocus = false;
-	};
- 
-	//IE
-	document.onfocusin = function() {
-	    isFocus = true;
-	};
-	document.onfocusout = function() {
-	    isFocus = false;
-	};
- 
-	if(window.Notification){
-		$("#btn").on('click',function(){
-			if(!isFocus){
-				//判断是否有权限显示通知
-				if(Notification.permission=="granted"){
-					pushNotice();
-				}else if(Notification.permission!="denied"){
-					//如果不是拒绝显示通知就请求允许显示通知
-					Notification.requestPermission(function(permission){
-						pushNotice();
-					});
-				}
-			}
-		});
-	}else{
-		$.alert({
-		    title: '信息',
-		    content: '浏览器不支持桌面通知'
-		});
-	}
-}
- 
-function pushNotice(){
-	//判断是否有显示通知的权限
-	if(Notification.permission=="granted"){
-		//初始化通知对象
-		var options = {
-		      body: "您有新的未读消息"
-		  }
-		  var notice = new Notification("通知",options);
-	}
-}
 
-                });
-            }
-        },1000)
-    }
-</script>
 </body>
 </html>
 
