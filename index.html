@@ -1,1 +1,37 @@
-<!DOCTYPE html><html lang="en"><head>	<meta charset="UTF-8">	<title>获取input输入框中的值</title></head><body>	<div>		<input class="input-box" type="text">		<input type="button" value="login" onclick="getInputVal()">	</div>	<p class="content"></p>	<script>		function getInputVal(){			const inputBox = document.querySelectorAll('.input-box')[0],				  content = document.querySelectorAll('.content')[0];			// 获取input输入框中的值			let inputVal = inputBox.value;			if(inputVal == "10110011"){				content.innerHTML = inputVal;				window.location.replace("1.html")				var x = ("LOADING")				content.innerHTML = x;			}else{				alert('ERROR 密码错误，请重试');			}		}	</script></body></html>
+<!DOCTYPE html>
+<strong>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录LOGIN</title>
+</head>
+  <h3>请输入访问此网站的密钥</h3>
+  
+<body>
+	<div>
+		<input class="input-box" type="text">
+		<input type="button" value="login" onclick="getInputVal()">
+	</div>
+	<p class="content"></p>
+	<script>
+		function getInputVal(){
+			const inputBox = document.querySelectorAll('.input-box')[0],
+				  content = document.querySelectorAll('.content')[0];
+			// 获取input输入框中的值
+			let inputVal = inputBox.value;
+			if(inputVal == "10110011"){
+				content.innerHTML = inputVal;
+				window.location.replace("1.html")
+				var x = ("LOADING")
+				content.innerHTML = x;
+			}else{
+				alert('ERROR 密码错误，请重试');
+			}
+		}
+	</script>
+</body>
+</html>
+  <p>不知道密码？您可以这样做：把冬瓜的拼音的每个字母，按照"分别排在英语字母表的第几位"的方式，得出每个字母代表的数，然后把每个数字分别转换成二进制数，把他们按顺序拼接在一起，就是密码。</p>
+  <br>
+  <p>是不是很难算？没关系！慢慢算吧。为什么要输入密码？这是为了在使用阿里云网站防火墙之前防止程序自动破解和盗链。</p>
+
