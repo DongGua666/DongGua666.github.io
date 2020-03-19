@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<strong>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>DongGua login</title>
+	<title>登录LOGIN</title>
 </head>
+  <h3>请输入访问此网站的密钥</h3>
+  
 <body>
 	<div>
 		<input class="input-box" type="text">
@@ -18,19 +21,36 @@
 			let inputVal = inputBox.value;
 			if(inputVal == "10110011"){
 				content.innerHTML = inputVal;
-				window.location.replace("1.html")
+				window.location.replace("home.html")
 				var x = ("LOADING")
 				content.innerHTML = x;
-			else if (inputVal == "kele"){
+			}
+			
+				
+			if(inputVal == "kele"){
 				content.innerHTML = inputVal;
 				window.location.replace("Wax kele.html")
 				var x = ("LOADING")
-				concent.innerHTML = x
-			}else{
-				var y = ("Unable to log in to DongGua Account");
-				concent.innerHTML = y
+			}
+			
+				
+			if(inputVal == "liurenhao"){
+				content.innerHTML = inputVal;
+				window.location.replace("Wax liuren.html")
+				var x = ("LOADING")
+			}
+			
+			
+			else{
+				
 			}
 		}
 	</script>
 </body>
 </html>
+  
+	<hr>
+<a href="yanzheng.html">匿名登录</a>
+	
+
+
