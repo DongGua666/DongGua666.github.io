@@ -6,16 +6,17 @@
 <title>DongGua</title>
 
 <button onclick="myFunction()">登录</button>
-<p id="demo"></p>
+<p id="demo">当前未登录</p>
 <script>
 function myFunction(){
-    var x;
-    var person=prompt("请输入用户名","usr");
-    if (person!=null && person=""){
-        x="你好" + person + "。欢迎登录";
-        document.getElementById("demo").innerHTML=x;
-    }
+    var word = prompt("请输入用户名","");
+        if(word){
+             //输出word的格式
+             x=(word + " 已登陆")
+	     document.getElementById("demo").innerHTML = x
+         }
 }
+
 	
         
 </script>
