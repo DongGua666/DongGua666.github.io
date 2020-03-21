@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DongGua Search</title>
+</head>
+<div>
+		<input class="input-box" type="text">
+		<input type="button" value="搜索" onclick="getInputVal()">
+	</div>
+	<p class="content"></p>
+	<script>
+		var x = ("LOADING")
+		function getInputVal(){
+			const inputBox = document.querySelectorAll('.input-box')[0],
+				  content = document.querySelectorAll('.content')[0];
+			// 获取input输入框中的值
+			let inputVal = inputBox.value;
+			if(inputVal == "冬瓜"){
+				content.innerHTML = inputVal;
+				window.location.replace("search/donggua1.html")
+				
+				content.innerHTML = x;
+			}
+			
+				
+			if(inputVal == "可乐"){
+				content.innerHTML = inputVal;
+				window.location.replace("search/kele.html")
+				content.innerHTML = x;
+			}
+			
+				
+			if(inputVal == "猫咪"){
+				content.innerHTML = inputVal;
+				window.location.replace("search/liurenhao.html")
+				content.innerHTML = x;
+			}
+			
+			if(inputVal == "羊羊"){
+				content.innerHTML = inputVal;
+				window.location.replace("search/yangyang.html")
+				content.innerHTML = x;
+      }
+      
+      window.location.replace(inputVal + ".html")
+			
+			
+			else{
+				content.innerHTML = "找不到目标"
+			}
+		}
+	</script>
+<body>
+</body>
+
+</html>
