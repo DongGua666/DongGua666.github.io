@@ -10,6 +10,7 @@
 	</div>
 	<p class="content"></p>
 	<script>
+		var x = ("LOADING")
 		function getInputVal(){
 			const inputBox = document.querySelectorAll('.input-box')[0],
 				  content = document.querySelectorAll('.content')[0];
@@ -18,27 +19,32 @@
 			if(inputVal == "冬瓜"){
 				content.innerHTML = inputVal;
 				window.location.replace("search/donggua1.html")
-				var x = ("LOADING")
+				
 				content.innerHTML = x;
 			}
 			
 				
-			if(inputVal == "kele"){
+			if(inputVal == "可乐"){
 				content.innerHTML = inputVal;
-				window.location.replace("Wax kele.html")
-				var x = ("LOADING")
+				window.location.replace("search/kele.html")
+				content.innerHTML = x;
 			}
 			
 				
-			if(inputVal == "liurenhao"){
+			if(inputVal == "猫咪"){
 				content.innerHTML = inputVal;
-				window.location.replace("Wax liuren.html")
-				var x = ("LOADING")
+				window.location.replace("search/liurenhao.html")
+				content.innerHTML = x;
 			}
+			
+			if(inputVal == "羊羊"){
+				content.innerHTML = inputVal;
+				window.lacation.replace("search/yangyang.html")
+				content.innerHTML = x;
 			
 			
 			else{
-				concent.innerHTML = "找不到目标"
+				content.innerHTML = "找不到目标"
 			}
 		}
 	</script>
