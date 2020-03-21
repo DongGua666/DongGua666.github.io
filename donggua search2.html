@@ -16,34 +16,9 @@
 				  content = document.querySelectorAll('.content')[0];
 			// 获取input输入框中的值
 			let inputVal = inputBox.value;
-			if(inputVal == "冬瓜"){
-				content.innerHTML = inputVal;
-				window.location.replace("search/donggua1.html")
-				
-				content.innerHTML = x;
-			}
-			
-				
-			if(inputVal == "可乐"){
-				content.innerHTML = inputVal;
-				window.location.replace("search/kele.html")
-				content.innerHTML = x;
-			}
-			
-				
-			if(inputVal == "猫咪"){
-				content.innerHTML = inputVal;
-				window.location.replace("search/liurenhao.html")
-				content.innerHTML = x;
-			}
-			
-			if(inputVal == "羊羊"){
-				content.innerHTML = inputVal;
-				window.location.replace("search/yangyang.html")
-				content.innerHTML = x;
-                        }
+			var data = inputVal + ".html"
       
-                        window.location.replace(inputVal + ".html")
+                        window.location.replace(data)
 			
 			
 			else{
