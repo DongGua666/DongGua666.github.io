@@ -4,27 +4,28 @@
 <meta charset="utf-8">
 <title>DongGua Search</title>
 </head>
-<div>
-		<input class="input-box" type="text">
-		<input type="button" value="搜索" onclick="getInputVal()">
-	</div>
-	<p class="content"></p>
-	<script>
-		var x = ("LOADING")
-		function getInputVal(){
-			const inputBox = document.querySelectorAll('.input-box')[0],
-				  content = document.querySelectorAll('.content')[0];
-			// 获取input输入框中的值
-			let inputVal = inputBox.value;
-			var data = inputVal + ".html"
-      
-                        window.location.replace(data)
-			
-			
-			
-			
-		}
-	</script>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">搜索</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // 获取 id="numb" 的输入字段的值
+  x = document.getElementById("numb").value;
+  var data = x + ".html"
+  document.getElementById("demo").innerHTML = text;
+  window.location.replace(data)
+}
+</script>
+
+</body>
+</html>
+
 <body>
 </body>
 
