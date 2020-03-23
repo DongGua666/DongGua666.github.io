@@ -12,12 +12,16 @@ function myFunction(){
     var word = prompt("请输入用户名","");
         if(word){
              //输出word的格式
-                x=(word + " 已登陆")
+                x=(word + " 已登录")
 		var fname = ("username=" + word)
 		document.cookie=fname
 	        document.getElementById("demo").innerHTML = x
          }
 }
+var coox = document.cookie;
+	if(coox){
+		y=(coox + " 已登录")
+		document.getElementById("demo").innerHTML = y
 
 	
         
